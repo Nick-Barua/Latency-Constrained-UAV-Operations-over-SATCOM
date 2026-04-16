@@ -7,26 +7,28 @@ This repository provides supporting materials for the research study:
 
 This work presents a system-level framework for analyzing and mitigating communication latency in satellite-enabled unmanned aerial vehicle (UAV) operations. The study transitions from descriptive analysis to a quantitative, latency-aware modeling approach, with direct implications for Beyond Visual Line of Sight (BVLOS) safety and autonomy.
 
+
 ---
 
 ## 🎨 Graphical Abstract
-![Graphical Abstract](docs/images/Latency-Constrained%20UAV%20Operations%20over%20SATCOM%20-GA.png)
+![Graphical Abstract](Latency-Constrained%20UAV%20Operations%20over%20SATCOM%20-GA.png)
 
 ---
 
 ## 🖼️ Figure Gallery
 
 ### Figure 1: SATCOM Communication Loop Decomposition
-![Figure 1](docs/images/Latency-Constrained%20UAV%20Operations%20Fig-1.png)
+![Figure 1](Latency-Constrained%20UAV%20Operations%20Fig-1.png)
 
 ### Figure 2: Normalized Control Effectiveness vs. Latency
-![Figure 2](docs/images/Latency-Constrained%20UAV%20Operations%20Fig-2.png)
+![Figure 2](Latency-Constrained%20UAV%20Operations%20Fig-2.png)
 
 ### Figure 3: Mission Envelope Map (Safety Zones)
-![Figure 3](docs/images/Latency-ConstrainedUAVOperationsFig-3.png)
+![Figure 3](Latency-ConstrainedUAVOperationsFig-3.png)
 
 ### Figure 4: AACF State Transition Logic
-![Figure 4](docs/images/Latency-ConstrainedUAVOperationsFig-4.png)
+![Figure 4](Latency-ConstrainedUAVOperationsFig-4.png)
+
 
 ---
 
