@@ -34,9 +34,25 @@ This formulation allows for the calculation of $P_{breach}$, representing the ri
 
 ---
 
+## 🖼️ Figure Gallery
+
+### Figure 1: SATCOM Communication Loop Decomposition
+![Figure 1](docs/images/Latency-Constrained%20UAV%20Operations%20Fig-1.png)
+
+### Figure 2: Normalized Control Effectiveness vs. Latency
+![Figure 2](docs/images/Latency-Constrained%20UAV%20Operations%20Fig-2.png)
+
+### Figure 3: Mission Envelope Map (Safety Zones)
+![Figure 3](docs/images/Latency-ConstrainedUAVOperationsFig-3.webp)
+
+### Figure 4: AACF State Transition Logic
+![Figure 4](docs/images/Latency-ConstrainedUAVOperationsFig-4.webp)
+
+---
+
 ## 📊 Data Description
 
-The following representative latency ranges are used to parameterize the analytical models and generate comparative results:
+The following representative latency ranges are used to parameterize the analytical models:
 
 | Mode | Uplink (ms) | Downlink (ms) | Total Latency (ms) |
 | :--- | :--- | :--- | :--- |
@@ -52,7 +68,7 @@ The following representative latency ranges are used to parameterize the analyti
     * `latency_models.py`: Implementation of deterministic and stochastic equations.
     * `aacf_engine.py`: Logic for the dynamic velocity arbitrator and state transitions.
 * **`data/`**: Standardized parameter sets for Urban, Inspection, and Disaster Response scenarios.
-* **`docs/`**: Supplemental documentation, including high-resolution visuals.
+* **`docs/`**: Supplemental documentation and high-resolution visuals.
 * **`figures/`**: Python scripts for generating manuscript visuals.
 
 ---
