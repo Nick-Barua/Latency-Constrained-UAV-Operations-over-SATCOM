@@ -13,56 +13,53 @@ This work presents a system-level framework for analyzing and mitigating communi
 
 This repository accompanies a manuscript that introduces the following key contributions:
 
-* [cite_start]**Deterministic Latency Decomposition**: Formal breakdown of end-to-end communication delay into operational components[cite: 10, 67].
-* [cite_start]**Stochastic Jitter Modeling ($\mathcal{J}$)**: Representation of latency variability in Low Earth Orbit (LEO) SATCOM environments[cite: 11, 88].
-* [cite_start]**Risk-Aware Formulation**: Probabilistic modeling of latency-induced control degradation and threshold breach risk ($P_{breach}$) [cite: 96-97].
-* [cite_start]**Adaptive Autonomy Control Framework (AACF)**: A control strategy that dynamically adapts UAV autonomy levels based on real-time latency conditions[cite: 12, 145].
-* [cite_start]**System-Level Integration**: Alignment with real-world UAV communication architectures and regulatory considerations[cite: 13, 192].
+* **Deterministic Latency Decomposition**: A formal breakdown of end-to-end communication delay into operational components.
+* **Stochastic Jitter Modeling ($\mathcal{J}$)**: Representation of latency variability in Low Earth Orbit (LEO) SATCOM environments arising from orbital handovers.
+* **Risk-Aware Formulation**: Probabilistic modeling of latency-induced control degradation and the Probability of Safety Breach ($P_{breach}$) metric.
+* **Adaptive Autonomy Control Framework (AACF)**: A dynamic control strategy that adjusts UAV autonomy levels and velocity based on real-time latency conditions.
 
 ---
 
 ## 📐 Mathematical Framework
 
-The total communication latency is defined as:
+The total deterministic communication latency is defined as:
 
 $$T_{total} = T_{uplink} + T_{satellite} + T_{downlink} + T_{processing}$$
 
-Where:
-* [cite_start]$T_{uplink}$: Ground-to-satellite transmission delay[cite: 69].
-* [cite_start]$T_{satellite}$: Satellite transponder processing delay[cite: 69].
-* [cite_start]$T_{downlink}$: Satellite-to-UAV transmission delay[cite: 71].
-* [cite_start]$T_{processing}$: Ground system processing and routing delay[cite: 70].
-
-For LEO systems, the model incorporates stochastic jitter ($\mathcal{J}$):
+For LEO systems, the model incorporates stochastic jitter ($\mathcal{J}$) to define the total reaction time:
 
 $$T_{reaction} = (T_{total} + \mathcal{J}) + T_{human}$$
 
-[cite_start]This formulation enables the evaluation of latency-induced performance degradation and safety risk [cite: 91-93].
+This formulation allows for the calculation of $P_{breach}$, representing the risk that stochastic delays exceed safe operational margins.
+
+---
+
+## 📊 Data Description
+
+The following representative latency ranges are used to parameterize the analytical models and generate comparative results:
+
+| Mode | Uplink (ms) | Downlink (ms) | Total Latency (ms) |
+| :--- | :--- | :--- | :--- |
+| **5G** | 5–10 | 5–10 | 10–20 |
+| **LEO SATCOM** | 10–50 | 15–90 | 25–140 |
+| **GEO SATCOM** | 250–350 | 290–400 | 540–750 |
 
 ---
 
 ## 📂 Repository Structure
 
-This repository is organized to support **Computational Reproducibility**. All analytical models and data parameters presented in the manuscript are implemented as follows:
-
-* **`src/`**: Core implementation and analytical scripts.
-    * `latency_models.py`: Implementation of the deterministic $T_{total}$ decomposition and the stochastic $T_{reaction}$ jitter model.
-    * `aacf_engine.py`: Logic for the **Adaptive Autonomy Control Framework (AACF)** and the dynamic velocity arbitrator (Equation 9).
-    * `plot_figures.py`: Automated generation of the mission envelope maps and control effectiveness curves.
-* **`data/`**: Standardized parameter sets used for mission scenario analysis.
-    * `comm_parameters.json`: Comprehensive latency and jitter values for 5G, LEO, and GEO communication modes.
-    * `mission_scenarios.csv`: Velocity and safety distance parameters for Urban, Inspection, and Disaster Response scenarios.
-* **`docs/`**: Supplemental documentation and high-resolution visual assets.
-    * `graphical_abstract.png`: The end-to-end logic pipeline of the research framework.
-    * `validation_protocol.md`: Detailed experimental roadmap and **Flight Performance Indicator (FPI)** definitions.
-* **`requirements.txt`**: Minimalist dependency list (NumPy, SciPy, Matplotlib) to ensure environment parity.
-* **`LICENSE`**: MIT License, ensuring transparency for academic and commercial research integration.
+* **`src/`**: Core implementation scripts.
+    * `latency_models.py`: Implementation of deterministic and stochastic equations.
+    * `aacf_engine.py`: Logic for the dynamic velocity arbitrator and state transitions.
+* **`data/`**: Standardized parameter sets for Urban, Inspection, and Disaster Response scenarios.
+* **`docs/`**: Supplemental documentation, including high-resolution visuals.
+* **`figures/`**: Python scripts for generating manuscript visuals.
 
 ---
 
-## ⚖️ License
-Distributed under the MIT License. See `LICENSE` for more information.
+## ⚙️ Usage
 
-## ✉️ Contact
-**Nick Barua** – [s.nick.barua@gmail.com](mailto:s.nick.barua@gmail.com)  
-*Chairman & CEO, AN Holdings Co.* *Visiting Professor, Shiga University of Medical Science; Kobe Gakuin University*
+### Prerequisites
+Ensure you have Python 3.8+ and the following libraries installed:
+```bash
+pip install matplotlib numpy scipy
