@@ -10,18 +10,23 @@ This work presents a system-level framework for analyzing and mitigating communi
 ---
 
 ## 🎨 Graphical Abstract
-![Graphical Abstract](docs/images/Latency-Constrained%20UAV%20Operations%20over%20SATCOM%20-GA.png)
+<img src="docs/images/Latency-Constrained%20UAV%20Operations%20over%20SATCOM%20-GA.png" width="800">
 
 ---
 
-## 🚀 Research Contributions
+## 🖼️ Figure Gallery
 
-This repository accompanies a manuscript that introduces the following key contributions:
+### Figure 1: SATCOM Communication Loop Decomposition
+<img src="docs/images/Latency-Constrained%20UAV%20Operations%20Fig-1.png" width="700">
 
-* **Deterministic Latency Decomposition**: A formal breakdown of end-to-end communication delay into operational components.
-* **Stochastic Jitter Modeling ($\mathcal{J}$)**: Representation of latency variability in Low Earth Orbit (LEO) SATCOM environments arising from orbital handovers.
-* **Risk-Aware Formulation**: Probabilistic modeling of latency-induced control degradation and the Probability of Safety Breach ($P_{breach}$) metric.
-* **Adaptive Autonomy Control Framework (AACF)**: A dynamic control strategy that adjusts UAV autonomy levels and velocity based on real-time latency conditions.
+### Figure 2: Normalized Control Effectiveness vs. Latency
+<img src="docs/images/Latency-Constrained%20UAV%20Operations%20Fig-2.png" width="700">
+
+### Figure 3: Mission Envelope Map (Safety Zones)
+<img src="docs/images/docs/images/Latency-ConstrainedUAVOperationsFig-3.png" width="700">
+
+### Figure 4: AACF State Transition Logic
+<img src="docs/images/Latency-ConstrainedUAVOperationsFig-4.png" width="700">
 
 ---
 
