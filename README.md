@@ -10,23 +10,23 @@ This work presents a system-level framework for analyzing and mitigating communi
 ---
 
 ## 🎨 Graphical Abstract
-<img src="docs/images/Latency-Constrained%20UAV%20Operations%20over%20SATCOM%20-GA.png" width="800">
+![Graphical Abstract](docs/images/Latency-Constrained%20UAV%20Operations%20over%20SATCOM%20-GA.png)
 
 ---
 
 ## 🖼️ Figure Gallery
 
 ### Figure 1: SATCOM Communication Loop Decomposition
-<img src="docs/images/Latency-Constrained%20UAV%20Operations%20Fig-1.png" width="700">
+![Figure 1](docs/images/Latency-Constrained%20UAV%20Operations%20Fig-1.png)
 
 ### Figure 2: Normalized Control Effectiveness vs. Latency
-<img src="docs/images/Latency-Constrained%20UAV%20Operations%20Fig-2.png" width="700">
+![Figure 2](docs/images/Latency-Constrained%20UAV%20Operations%20Fig-2.png)
 
 ### Figure 3: Mission Envelope Map (Safety Zones)
-<img src="docs/images/docs/images/Latency-ConstrainedUAVOperationsFig-3.png" width="700">
+![Figure 3](docs/images/Latency-ConstrainedUAVOperationsFig-3.png)
 
 ### Figure 4: AACF State Transition Logic
-<img src="docs/images/Latency-ConstrainedUAVOperationsFig-4.png" width="700">
+![Figure 4](docs/images/Latency-ConstrainedUAVOperationsFig-4.png)
 
 ---
 
