@@ -9,6 +9,11 @@ This work presents a system-level framework for analyzing and mitigating communi
 
 ---
 
+## 🎨 Graphical Abstract
+![Graphical Abstract](docs/images/Latency-Constrained%20UAV%20Operations%20over%20SATCOM%20-GA.png)
+
+---
+
 ## 🚀 Research Contributions
 
 This repository accompanies a manuscript that introduces the following key contributions:
@@ -30,8 +35,6 @@ For LEO systems, the model incorporates stochastic jitter ($\mathcal{J}$) to def
 
 $$T_{reaction} = (T_{total} + \mathcal{J}) + T_{human}$$
 
-This formulation allows for the calculation of $P_{breach}$, representing the risk that stochastic delays exceed safe operational margins.
-
 ---
 
 ## 🖼️ Figure Gallery
@@ -43,10 +46,10 @@ This formulation allows for the calculation of $P_{breach}$, representing the ri
 ![Figure 2](docs/images/Latency-Constrained%20UAV%20Operations%20Fig-2.png)
 
 ### Figure 3: Mission Envelope Map (Safety Zones)
-![Figure 3](docs/images/Latency-ConstrainedUAVOperationsFig-3.webp)
+![Figure 3](docs/images/Latency-ConstrainedUAVOperationsFig-3.png)
 
 ### Figure 4: AACF State Transition Logic
-![Figure 4](docs/images/Latency-ConstrainedUAVOperationsFig-4.webp)
+![Figure 4](docs/images/Latency-ConstrainedUAVOperationsFig-4.png)
 
 ---
 
@@ -64,11 +67,9 @@ The following representative latency ranges are used to parameterize the analyti
 
 ## 📂 Repository Structure
 
-* **`src/`**: Core implementation scripts.
-    * `latency_models.py`: Implementation of deterministic and stochastic equations.
-    * `aacf_engine.py`: Logic for the dynamic velocity arbitrator and state transitions.
-* **`data/`**: Standardized parameter sets for Urban, Inspection, and Disaster Response scenarios.
-* **`docs/`**: Supplemental documentation and high-resolution visuals.
+* **`src/`**: Core implementation scripts for latency models and AACF logic.
+* **`data/`**: Standardized parameter sets for various mission scenarios.
+* **`docs/images/`**: High-resolution figures and graphical assets.
 * **`figures/`**: Python scripts for generating manuscript visuals.
 
 ---
