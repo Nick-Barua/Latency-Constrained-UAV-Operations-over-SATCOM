@@ -44,22 +44,6 @@ $$T_{reaction} = (T_{total} + \mathcal{J}) + T_{human}$$
 
 ---
 
-## 🖼️ Figure Gallery
-
-### Figure 1: SATCOM Communication Loop Decomposition
-![Figure 1](docs/images/Latency-Constrained%20UAV%20Operations%20Fig-1.png)
-
-### Figure 2: Normalized Control Effectiveness vs. Latency
-![Figure 2](docs/images/Latency-Constrained%20UAV%20Operations%20Fig-2.png)
-
-### Figure 3: Mission Envelope Map (Safety Zones)
-![Figure 3](docs/images/Latency-ConstrainedUAVOperationsFig-3.png)
-
-### Figure 4: AACF State Transition Logic
-![Figure 4](docs/images/Latency-ConstrainedUAVOperationsFig-4.png)
-
----
-
 ## 📊 Data Description
 
 The following representative latency ranges are used to parameterize the analytical models:
