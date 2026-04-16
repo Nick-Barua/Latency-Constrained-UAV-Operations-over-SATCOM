@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this analytical framework or the associated code, please cite it as follows."
+authors:
+- family-names: "Barua"
+  given-names: "Nick"
+  orcid: "https://orcid.org/0000-0003-4641-0112"
+title: "Latency-Constrained UAV Operations over SATCOM: A System-Level Analytical Framework"
+version: 1.0.0
+date-released: 2026-04-16
+url: "https://github.com/NickBarua/Latency-Constrained-UAV-Operations-over-SATCOM"
